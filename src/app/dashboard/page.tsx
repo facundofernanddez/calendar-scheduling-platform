@@ -1,12 +1,7 @@
-import { auth } from "@/lib/auth";
-import { redirect } from "next/navigation";
+import { requireUser } from "@/lib/hooks";
 
 export default async function DashboardPage() {
-  const session = await auth();
-
-  if (!session?.user) {
-    return redirect("/");
-  }
+  const session = await requireUser();
 
   return <div>Hola dashboard</div>;
 }
