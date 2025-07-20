@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import AuthModal from "./AuthModal";
 
 export default function Navbar() {
   return (
@@ -9,7 +10,7 @@ export default function Navbar() {
         className="flex items-center gap-2"
       >
         <Image
-          src={}
+          src={""}
           alt="Logo"
           className="size-10"
         ></Image>
@@ -17,6 +18,8 @@ export default function Navbar() {
           Facundo <span className="text-blue-500">Fernandez</span>
         </h4>
       </Link>
+
+      <AuthModal />
     </div>
   );
 }
