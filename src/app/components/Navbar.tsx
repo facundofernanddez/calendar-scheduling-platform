@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
 export default function Navbar() {
   return (
@@ -10,7 +9,7 @@ export default function Navbar() {
         className="flex items-center gap-2"
       >
         <Image
-          src={CalendarMonthIcon}
+          src={}
           alt="Logo"
           className="size-10"
         ></Image>
